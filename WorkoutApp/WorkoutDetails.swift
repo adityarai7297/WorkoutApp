@@ -21,7 +21,13 @@ struct WorkoutDetail: View {
             Button("End Workout") {
                 workout.sets = Int(sets) ?? 0
                 // Here, you would save the workout data to your database
-                self.presentationMode.wrappedValue.dismiss()
+                NetworkManager.shared.addWorkout(workout: workout) { success, error in
+                        if success {
+                            self.presentationMode.wrappedValue.dismiss()
+                        } else {
+                            // Handle the error (e.g., show an alert to the user)
+                        }
+                    }
             }
             .padding()
             .background(Color.blue)

@@ -16,6 +16,7 @@
 		04F62E8F2A831862000C3CEC /* WorkoutAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E8E2A831862000C3CEC /* WorkoutAppUITestsLaunchTests.swift */; };
 		04F62E9C2A832CFB000C3CEC /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E9B2A832CFB000C3CEC /* WorkoutModel.swift */; };
 		04F62E9E2A832D7A000C3CEC /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E9D2A832D7A000C3CEC /* WorkoutDetails.swift */; };
+		04F62EA02A833E83000C3CEC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E9F2A833E83000C3CEC /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		04F62E8E2A831862000C3CEC /* WorkoutAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04F62E9B2A832CFB000C3CEC /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
 		04F62E9D2A832D7A000C3CEC /* WorkoutDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetails.swift; sourceTree = "<group>"; };
+		04F62E9F2A833E83000C3CEC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				04F62E712A83185F000C3CEC /* WorkoutAppApp.swift */,
 				04F62E9B2A832CFB000C3CEC /* WorkoutModel.swift */,
+				04F62E9F2A833E83000C3CEC /* NetworkManager.swift */,
 				04F62E9D2A832D7A000C3CEC /* WorkoutDetails.swift */,
 				04F62E732A83185F000C3CEC /* ContentView.swift */,
 				04F62E752A831862000C3CEC /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F62EA02A833E83000C3CEC /* NetworkManager.swift in Sources */,
 				04F62E742A83185F000C3CEC /* ContentView.swift in Sources */,
 				04F62E9E2A832D7A000C3CEC /* WorkoutDetails.swift in Sources */,
 				04F62E9C2A832CFB000C3CEC /* WorkoutModel.swift in Sources */,
