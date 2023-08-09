@@ -4,6 +4,7 @@ import SwiftUI
 struct WorkoutDetail: View {
     @State var workout: Workout
     @State private var sets: String = ""
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         VStack {
@@ -20,9 +21,7 @@ struct WorkoutDetail: View {
             Button("End Workout") {
                 workout.sets = Int(sets) ?? 0
                 // Here, you would save the workout data to your database
-                // For simplicity, I'm omitting database-related code
-                // After saving, navigate back to the previous screen.
-                // In SwiftUI, this can be done using an environment object for navigation.
+                self.presentationMode.wrappedValue.dismiss()
             }
             .padding()
             .background(Color.blue)
