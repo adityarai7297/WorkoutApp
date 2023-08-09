@@ -14,6 +14,8 @@
 		04F62E832A831862000C3CEC /* WorkoutAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E822A831862000C3CEC /* WorkoutAppTests.swift */; };
 		04F62E8D2A831862000C3CEC /* WorkoutAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E8C2A831862000C3CEC /* WorkoutAppUITests.swift */; };
 		04F62E8F2A831862000C3CEC /* WorkoutAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E8E2A831862000C3CEC /* WorkoutAppUITestsLaunchTests.swift */; };
+		04F62E9C2A832CFB000C3CEC /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E9B2A832CFB000C3CEC /* WorkoutModel.swift */; };
+		04F62E9E2A832D7A000C3CEC /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F62E9D2A832D7A000C3CEC /* WorkoutDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		04F62E882A831862000C3CEC /* WorkoutAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F62E8C2A831862000C3CEC /* WorkoutAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAppUITests.swift; sourceTree = "<group>"; };
 		04F62E8E2A831862000C3CEC /* WorkoutAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04F62E9B2A832CFB000C3CEC /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		04F62E9D2A832D7A000C3CEC /* WorkoutDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				04F62E712A83185F000C3CEC /* WorkoutAppApp.swift */,
+				04F62E9B2A832CFB000C3CEC /* WorkoutModel.swift */,
+				04F62E9D2A832D7A000C3CEC /* WorkoutDetails.swift */,
 				04F62E732A83185F000C3CEC /* ContentView.swift */,
 				04F62E752A831862000C3CEC /* Assets.xcassets */,
 				04F62E772A831862000C3CEC /* Preview Content */,
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F62E742A83185F000C3CEC /* ContentView.swift in Sources */,
+				04F62E9E2A832D7A000C3CEC /* WorkoutDetails.swift in Sources */,
+				04F62E9C2A832CFB000C3CEC /* WorkoutModel.swift in Sources */,
 				04F62E722A83185F000C3CEC /* WorkoutAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
