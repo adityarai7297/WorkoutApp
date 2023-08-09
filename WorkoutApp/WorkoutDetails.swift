@@ -4,6 +4,8 @@ import SwiftUI
 struct WorkoutDetail: View {
     @State var workout: Workout
     @State private var sets: String = ""
+    @State private var showAlert = false
+    @State private var alertMessage = ""
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
@@ -25,7 +27,8 @@ struct WorkoutDetail: View {
                         if success {
                             self.presentationMode.wrappedValue.dismiss()
                         } else {
-                            // Handle the error (e.g., show an alert to the user)
+                            alertMessage = "Failed to add workout"
+                            showAlert = true
                         }
                     }
             }
@@ -33,6 +36,11 @@ struct WorkoutDetail: View {
             .background(Color.blue)
             .foregroundColor(.white)
             .cornerRadius(10)
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Error"),
+                  message: Text(alertMessage),
+                  dismissButton: .default(Text("OK")))
         }
         .padding()
     }
