@@ -4,7 +4,7 @@ import Foundation
 
 struct NetworkManager {
     static let shared = NetworkManager()
-    private let baseURL = "https://your-backend-server.com" // Replace with your backend server's URL
+    private let baseURL = "https://your-backend-server.com"
     
     func addWorkout(workout: Workout, completion: @escaping (Bool, Error?) -> Void) {
         let endpoint = "\(baseURL)/addWorkout"
