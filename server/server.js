@@ -18,12 +18,29 @@ const pool = new Pool({
 app.use(bodyParser.json());
 
 // Sample endpoint to add a workout
+app.post('/addSet', async (req, res) => {
+  try {
+    const workout = req.body;
+
+    // Basic SQL query to insert workout into a table
+    const query = 'INSERT INTO workouts(name, reps, rpe, timestamp) VALUES($1, $2, $3, $4)';
+    const values = [workout.name, workout.sets];
+
+    await pool.query(query, values);
+    res.json({ success: true });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Internal server error' });
+  }
+});
+
+// Sample endpoint to add a workout
 app.post('/addWorkout', async (req, res) => {
   try {
     const workout = req.body;
 
     // Basic SQL query to insert workout into a table
-    const query = 'INSERT INTO workouts(name, sets) VALUES($1, $2)';
+    const query = 'INSERT INTO workouts(workout, sets) VALUES($1, $2)';
     const values = [workout.name, workout.sets];
 
     await pool.query(query, values);
